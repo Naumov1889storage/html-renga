@@ -1,0 +1,262 @@
+@font-face {
+  font-family: 'Lato-Hairline';
+  src: url("/fonts/Lato-Hairline.ttf");
+}
+@font-face {
+  font-family: 'latothin';
+  src: url("/fonts/latothin.ttf");
+}
+@font-face {
+  font-family: 'latolight';
+  src: url("/fonts/latolight.ttf");
+}
+@font-face {
+  font-family: 'latobold';
+  src: url("/fonts/latobold.ttf");
+}
+@font-face {
+  font-family: 'latoblack';
+  src: url("/fonts/latoblack.ttf");
+}
+body,
+html {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  font-family: latothin;
+}
+h1 {
+  font-size: 133px;
+}
+h2 {
+  font-size: 48px;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 11px;
+  max-width: 1024px;
+  width: 100%;
+}
+.transpBox {
+  position: relative;
+  z-index: 10;
+}
+.transpBox:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.32;
+}
+.transpBox.left:before {
+  width: 300%;
+  right: 0;
+}
+input:not(.checkbox) {
+  margin: 6px 0 6px 0;
+  padding: 0 12px 0 12px;
+  width: 254px;
+  height: 39px;
+  color: #7f7f7f;
+  border: 1px solid #8f9291;
+}
+.checkbox label {
+  font-family: latolight;
+}
+.checkbox label span {
+  color: #6a9dcf;
+}
+.checkbox label span b {
+  font-family: latobold;
+}
+.checkbox input:not(checked) + label:before {
+  top: -1px;
+  left: 3px;
+  width: 27px;
+  height: 22px;
+  background: url("/img/checkbox.png") 2px -33px no-repeat;
+  border-radius: 0;
+}
+.checkbox input:checked + label:before {
+  width: 27px;
+  height: 22px;
+  background: url("/img/checkbox.png") 2px 0 no-repeat;
+}
+.checkbox input:checked + label:after {
+  display: none;
+}
+.btn1 {
+  width: 137px;
+  height: 49px;
+  font-family: latolight;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 50px;
+  background-image: -moz-linear-gradient(0deg, #51d5c7 0%, #5ab5e9 100%);
+  background-image: -webkit-linear-gradient(0deg, #51d5c7 0%, #5ab5e9 100%);
+  background-image: -ms-linear-gradient(0deg, #51d5c7 0%, #5ab5e9 100%);
+}
+.agreement {
+  font-size: 12px;
+  color: #989898;
+}
+.agreement a {
+  color: #6a9dcf;
+}
+.header {
+  position: relative;
+  padding-bottom: 120px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #fff;
+}
+.header a {
+  color: #fff;
+}
+.header:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+}
+.header .container {
+  position: relative;
+  z-index: 10;
+}
+.header,
+.header_video {
+  min-width: 100%;
+  min-height: 100vh;
+}
+.header_video {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: url("/img/header-bg.jpg") center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.header_top {
+  margin-bottom: vh;
+}
+.header_top__menu {
+  height: 60px;
+}
+.header_top__menu li {
+  height: 100%;
+}
+.header_top__menu li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 8px 0 8px;
+  height: 100%;
+  font-family: latoblack;
+}
+.header_top__menu li a:before {
+  content: '';
+  position: absolute;
+  right: 8px;
+  bottom: 13px;
+  height: 3px;
+  width: calc(100% - 16px);
+}
+.header_top__menu li a:hover:before {
+  border-bottom: 3px solid #d99287;
+}
+.header_top__menu li:first-child a {
+  padding: 0 8px 0 16px;
+}
+.header_top__menu li:first-child a:before {
+  right: 8px;
+  width: calc(100% - 24px);
+}
+.header_top__menu li:last-child a {
+  padding: 0 16px 0 8px;
+}
+.header_top__menu li:last-child a:before {
+  right: 16px;
+  width: calc(100% - 24px);
+}
+.header_top__call {
+  padding-bottom: 12px;
+}
+.header_top__call .call-tel {
+  padding: 8px 14px 5px 14px;
+  font-family: latoblack;
+  font-size: 29px;
+}
+.header_top__call .call-btn {
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: Lato-Hairline;
+}
+.header_top__call .call-btn:hover {
+  text-decoration: none;
+}
+.header h1 {
+  margin-bottom: 22px;
+  padding: 0 0 16px 0;
+  font-family: latobold;
+}
+.header h1 .transpBox {
+  padding: 0 33px 6px 55px;
+}
+.header h1 .transpBox:before {
+  top: 10px;
+}
+.header .subtitle {
+  font-family: latoblack;
+  font-size: 29px;
+  margin-bottom: 20px;
+  padding: 20px 35px 25px 0;
+}
+.header .subtitle .transpBox {
+  padding: 20px 35px 25px 0;
+  left: -30px;
+}
+.header_middle__menu {
+  padding: 25px 0 35px 0;
+  max-width: 680px;
+}
+.header_middle__menu:before {
+  background: #00b3ba;
+}
+.header_middle__menu li {
+  padding: 0 15px 0 15px;
+}
+.header_middle__menu li a {
+  font-family: latolight;
+  font-size: 20px;
+  line-height: 33px;
+}
+.header_middle__menu li a:hover span {
+  text-decoration: none;
+}
+.header_middle__menu li a span {
+  font-family: latoblack;
+  text-decoration: underline;
+}
+.arrowDown {
+  position: absolute;
+  z-index: 10;
+  display: block;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-38px);
+  width: 79px;
+  height: 79px;
+  background: url("/img/arrow-down.png") no-repeat;
+}
