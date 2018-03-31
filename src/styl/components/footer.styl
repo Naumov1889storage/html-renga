@@ -1,5 +1,26 @@
 @import "common"
 
 .footer {
-
+	background: url(/img/footer.jpg) -280px 9px repeat-x
+	.container {
+		position: relative
+		height: 100px
+		&:before {
+			content: ''
+			position: absolute
+			bottom: 62px
+			right: 255px
+			width: 300%
+			height: 13px
+			background: url(/img/footer-pattern.jpg) right repeat-x
+		}
+	}
+	.flex_row__between {
+		position: absolute
+		left: 182px
+		bottom: 15px
+		font-family: latolight
+		font-size: 21px
+		color: #ffffff
+	}
 }

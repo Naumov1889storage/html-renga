@@ -163,3 +163,60 @@ textarea {
 .agreement a:hover {
   text-decoration: none;
 }
+.contact {
+  padding-top: 95px;
+}
+.contact_map {
+  width: 545px;
+  height: 545px;
+  overflow: hidden;
+  border: 1px solid #989898;
+  border-radius: 100%;
+}
+.contact_text {
+  position: relative;
+  z-index: -1;
+  top: -80px;
+  padding: 100px 0 10px 0;
+  width: 372px;
+  font-family: latolight;
+  color: #6a7b8c;
+  text-align: center;
+  border: 1px solid #b6b6b6;
+}
+.contact_text h4 {
+  margin-bottom: 8px;
+  font-size: 42px;
+  line-height: 50px;
+}
+.contact_text p {
+  font-size: 25px;
+  line-height: 29px;
+}
+.contact_text span {
+  display: block;
+  margin-bottom: 20px;
+}
+.contact form {
+  padding: 100px 42px 38px 42px;
+  width: 360px;
+}
+.contact form .orderForm_title {
+  font-family: latothin;
+  font-weight: 100;
+  font-size: 37px;
+}
+.contact form .checkbox2 {
+  color: #7f7f7f;
+}
+.contact form .flex_column {
+  margin: 12px 0 12px 0;
+}
+.contact form .checkbox {
+  display: flex;
+  align-self: flex-start;
+  margin: 5px 0 5px 8px;
+}
+.contact form .btn3 {
+  margin-top: 10px;
+}

@@ -11,6 +11,10 @@
   src: url("/fonts/latolight.ttf");
 }
 @font-face {
+  font-family: 'latoregular';
+  src: url("/fonts/latoregular.ttf");
+}
+@font-face {
   font-family: 'latobold';
   src: url("/fonts/latobold.ttf");
 }
@@ -99,10 +103,22 @@ input:not(.checkbox) {
   background-image: -webkit-linear-gradient(0deg, #51d5c7 0%, #5ab5e9 100%);
   background-image: -ms-linear-gradient(0deg, #51d5c7 0%, #5ab5e9 100%);
 }
+.btn2 {
+  width: 137px;
+  height: 49px;
+  font-family: latolight;
+  color: #fff;
+  background: #fb5f62;
+  border-radius: 50px;
+}
 .agreement {
   font-size: 12px;
   color: #989898;
 }
 .agreement a {
   color: #6a9dcf;
+  text-decoration: underline;
+}
+.agreement a:hover {
+  text-decoration: none;
 }

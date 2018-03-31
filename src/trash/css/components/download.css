@@ -1,0 +1,61 @@
+.download {
+  padding-top: 105px;
+  height: 416px;
+  background: url("/img/download.jpg") center no-repeat;
+}
+.download h2 {
+  margin-bottom: 25px;
+  font-family: latoblack;
+  font-size: 42px;
+  line-height: 40px;
+  color: #798897;
+}
+.download h2 span {
+  font-family: Lato-Hairline;
+  font-size: 29px;
+}
+.download .btn-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-left: 15px;
+  width: 357px;
+  height: 42px;
+  font-family: latomedium;
+  font-size: 20px;
+  color: #798897;
+  border: 1px solid #99a9b6;
+  border-radius: 16px;
+}
+.download .btn-wrap b {
+  font-family: latoblack;
+}
+.download .btn-wrap a {
+  position: relative;
+  margin-right: -6px;
+  padding-left: 32px;
+  width: 166px;
+  height: 49px;
+  font-family: latolight;
+  font-size: 16px;
+  line-height: 49px;
+  color: #fff;
+  background-image: -moz-linear-gradient(0deg, #9dce56 0%, #1da7c7 100%);
+  background-image: -webkit-linear-gradient(0deg, #9dce56 0%, #1da7c7 100%);
+  background-image: -ms-linear-gradient(0deg, #9dce56 0%, #1da7c7 100%);
+  border-radius: 100px;
+}
+.download .btn-wrap a:after {
+  content: '';
+  position: absolute;
+  right: 5px;
+  width: 42px;
+  height: 42px;
+  background: url("/img/btn-arrow.png");
+  top: 50%;
+  transform: translateY(-50%);
+}
+.download_remark {
+  font-family: latolight;
+  color: #798897;
+}

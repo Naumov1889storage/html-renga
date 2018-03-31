@@ -1,0 +1,28 @@
+.contact
+    .container
+        .flex_row__between
+            .contact_left.flex_column.align_center
+                .contact_map
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa6127abfca397dacaedadacd713689d3c2a3434546e55f4713b2f8b504d439e8&amp;width=560&amp;height=560&amp;lang=ru_RU&amp;scroll=true"></script>
+                .contact_text
+                    h4 КОНТАКТЫ
+                    p
+                        span г. Санкт-Петербург <br> Пр. Энгельса, д. 124 кор. 1
+                        span <b>+ 7 (812) 740-76-48</b> <br> info@pronanocad.ru
+
+            form.flex_column.align_center
+                .orderForm_title Задать вопрос
+                .flex_column
+                    input(type='name' placeholder='Имя*')
+                    input(type='email' placeholder='Email')
+                    textarea(placeholder='Ваш вопрос*')
+                <div class="checkbox checkbox2">
+                    <input type="checkbox" id="checkbox-7" checked/>
+                <label for="checkbox-7">Получить ответ по <b>email</b></label>
+                </div>
+                <div class="checkbox checkbox2">
+                    <input type="checkbox" id="checkbox-8"/>
+                    <label for="checkbox-8">Получить ответ по <b>телефону</b></label>
+                </div>
+                input(type='tel' placeholder='Телефон*')
+                button(class='btn3' type='button') Задать вопрос

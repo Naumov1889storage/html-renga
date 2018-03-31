@@ -1,0 +1,46 @@
+.orderBottom {
+  background: url("/img/orderBottom.jpg") top center;
+}
+.orderBottom .transpBox_wrap__first {
+  padding: 40px 15px 40px 100px;
+}
+.orderBottom .transpBox_wrap__first .transpBox.left {
+  padding: 50px 15px 50px 80px;
+  height: 40px;
+  font-family: latobold;
+  font-size: 37px;
+  color: #6a7b8c;
+  background: url("/img/logo10.png") no-repeat 0 50%;
+}
+.orderBottom .transpBox_wrap__first .transpBox.left span {
+  color: #f96160;
+}
+.orderBottom .transpBox_wrap__first .transpBox.left:before {
+  background: #fff;
+  opacity: 0.8;
+}
+.orderBottom form.transpBox {
+  padding: 35px 42px 38px 42px;
+  width: 360px;
+}
+.orderBottom form.transpBox:before {
+  background: #fff;
+  opacity: 0.8;
+}
+.orderBottom form.transpBox .flex_column {
+  margin: 12px 0 12px 0;
+}
+.orderBottom form.transpBox .checkbox {
+  display: flex;
+  align-self: flex-start;
+  margin: 2px 0 2px 8px;
+}
+.orderBottom form.transpBox button {
+  margin: 8px 0 12px 0;
+}
+.orderBottom form.transpBox .agreement {
+  color: #000;
+}
+.orderBottom form.transpBox .agreement a {
+  color: #2e5e8e;
+}

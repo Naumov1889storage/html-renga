@@ -163,3 +163,58 @@ textarea {
 .agreement a:hover {
   text-decoration: none;
 }
+.done h2 {
+  margin: 90px 0 160px 0;
+  font-family: latolight;
+  font-size: 33px;
+  text-align: center;
+  font-weight: 100;
+  color: #6a7b8c;
+}
+.done h2 span {
+  color: #fb5f62;
+}
+.done .flex_row__around {
+  flex-wrap: wrap;
+}
+.done .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  width: 50%;
+}
+.done .item .img_wrap {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 322px;
+  height: 290px;
+  border: 1px solid #d8d8d8;
+}
+.done .item .img_wrap img {
+  position: absolute;
+  bottom: 8px;
+  max-width: 500px;
+}
+.done .item p {
+  margin-top: 5px;
+  width: 322px;
+  font-family: latolight;
+  line-height: 25px;
+}
+.done .item p span {
+  display: block;
+}
+.done .item a {
+  font-family: latoregular;
+  text-decoration: underline;
+  line-height: 25px;
+  color: #016087;
+}
+.done .item a:hover {
+  text-decoration: none;
+}
+.done .item a:visited {
+  color: #01435f;
+}

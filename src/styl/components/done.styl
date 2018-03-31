@@ -1,0 +1,59 @@
+@import "common"
+
+.done {
+	h2 {
+		margin: 90px 0 160px 0
+		font-family: latolight
+		font-size: 33px
+		text-align: center
+		font-weight: 100
+		color: #6a7b8c
+		span {
+			color: #fb5f62
+		}
+	}
+	.flex_row__around {
+		flex-wrap: wrap
+	}
+	.item {
+		display: flex
+		flex-direction column
+		align-items center
+		margin-bottom: 100px
+		width: 50%
+		.img_wrap {
+			display: flex
+			justify-content: center
+			position: relative
+			width: 322px
+			height: 290px
+			border: 1px solid #d8d8d8
+			img {
+				position: absolute
+				bottom: 8px
+				max-width: 500px
+			}
+		}
+		p {
+			margin-top: 5px
+			width: 322px
+			font-family: latolight
+			line-height: 25px
+			span {
+				display: block
+			}
+		}
+		a {
+			font-family: latoregular
+			text-decoration: underline
+			line-height: 25px
+			color: #016087
+			&:hover {
+				text-decoration: none
+			}
+			&:visited {
+				color: darken(#016087, 30%)
+			}
+		}
+	}
+}

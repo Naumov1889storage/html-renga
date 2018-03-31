@@ -45,18 +45,46 @@
 #f .front {
   background: #b3d2e2;
 }
+.application h2 {
+  font-family: latoblack;
+  font-size: 48px;
+  color: #fff;
+  opacity: 0.6;
+}
 .application .tab_wrap {
   display: flex;
 }
 .application .tab_title {
   min-width: 200px;
 }
+.application .tab_title__item {
+  font-family: latoblack;
+  font-size: 16px;
+  line-height: 50px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.application .tab_title__item:hover {
+  cursor: pointer;
+}
 .application .tab_content {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .application .tab_content__item {
   padding: 15px 15px 15px 50px;
+  line-height: 20px;
+  color: #fff;
   background: #568aaa;
+}
+.application .tab_content__item p {
+  margin-bottom: 20px;
+}
+.application .tab_content__item .application_icon {
+  display: inline-block;
+  margin: -5px 8px 0 0;
+  min-width: 51px;
+  height: 51px;
+  background: url("/img/tab-icon-sample.png") center;
 }
 .application h2 {
   padding-right: 105px;

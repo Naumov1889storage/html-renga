@@ -33,17 +33,46 @@
 // hunny menu end
 
 .application {
+	h2 {
+		font-family: latoblack
+		font-size: 48px
+		color: #ffffff
+		opacity: .6
+	}
+
 	.tab_wrap {
 		display: flex
 	}
 	.tab_title {
 		min-width: 200px
+		&__item {
+			font-family: latoblack
+			font-size: 16px
+			line-height: 50px
+			color: #ffffff
+			text-transform: uppercase
+			&:hover {
+				cursor: pointer
+			}
+		}
 	}
 	.tab_content {
-		margin-top: 20px
+		margin-top: 15px
 		&__item {
 			padding: 15px 15px 15px 50px
+			line-height: 20px
+			color: #ffffff
 			background: #568aaa
+			p {
+				margin-bottom: 20px
+			}
+			.application_icon {
+				display: inline-block
+				margin: -5px 8px 0 0
+				min-width: 51px
+				height: 51px
+				background: url(/img/tab-icon-sample.png) center
+			}
 		}
 	}
 }
