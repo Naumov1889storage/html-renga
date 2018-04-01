@@ -19,6 +19,10 @@
   src: url("/fonts/latomedium.ttf");
 }
 @font-face {
+  font-family: 'latosemibold';
+  src: url("/fonts/latosemibold.ttf");
+}
+@font-face {
   font-family: 'latobold';
   src: url("/fonts/latobold.ttf");
 }
@@ -38,6 +42,16 @@ h1 {
 }
 h2 {
   font-size: 48px;
+}
+a {
+  color: #016087;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+a:visited {
+  color: #01435f;
 }
 .container {
   margin: 0 auto;

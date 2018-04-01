@@ -1,4 +1,4 @@
-.contact
+.contact#contact
     .container
         .flex_row__between
             .contact_left.flex_column.align_center
@@ -10,19 +10,20 @@
                         span г. Санкт-Петербург <br> Пр. Энгельса, д. 124 кор. 1
                         span <b>+ 7 (812) 740-76-48</b> <br> info@pronanocad.ru
 
-            form.flex_column.align_center
-                .orderForm_title Задать вопрос
-                .flex_column
-                    input(type='name' placeholder='Имя*')
-                    input(type='email' placeholder='Email')
-                    textarea(placeholder='Ваш вопрос*')
-                <div class="checkbox checkbox2">
-                    <input type="checkbox" id="checkbox-7" checked/>
-                <label for="checkbox-7">Получить ответ по <b>email</b></label>
-                </div>
-                <div class="checkbox checkbox2">
-                    <input type="checkbox" id="checkbox-8"/>
-                    <label for="checkbox-8">Получить ответ по <b>телефону</b></label>
-                </div>
-                input(type='tel' placeholder='Телефон*')
-                button(class='btn3' type='button') Задать вопрос
+            div
+                form.flex_column.align_center
+                    .orderForm_title Задать вопрос
+                    .flex_column
+                        input(type='name' placeholder='Имя*')
+                        input(type='email' placeholder='Email')
+                        textarea(placeholder='Ваш вопрос*')
+                    <div class="checkbox checkbox2">
+                        <input type="checkbox" id="checkbox-7" checked/>
+                    <label for="checkbox-7">Получить ответ по <b>email</b></label>
+                    </div>
+                    <div class="checkbox checkbox2">
+                        <input type="checkbox" id="checkbox-8"/>
+                        <label for="checkbox-8">Получить ответ по <b>телефону</b></label>
+                    </div>
+                    input(type='tel' placeholder='Телефон*')
+                    button(class='btn3' type='button') Задать вопрос

@@ -19,6 +19,10 @@
   src: url("/fonts/latomedium.ttf");
 }
 @font-face {
+  font-family: 'latosemibold';
+  src: url("/fonts/latosemibold.ttf");
+}
+@font-face {
   font-family: 'latobold';
   src: url("/fonts/latobold.ttf");
 }
@@ -38,6 +42,16 @@ h1 {
 }
 h2 {
   font-size: 48px;
+}
+a {
+  color: #016087;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+a:visited {
+  color: #01435f;
 }
 .container {
   margin: 0 auto;
@@ -179,6 +193,15 @@ textarea {
   height: 13px;
   background: url("/img/footer-pattern.jpg") right repeat-x;
 }
+.footer .container:after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  width: 59px;
+  height: 65px;
+  background: url("/img/footer-logo.png");
+}
 .footer .flex_row__between {
   position: absolute;
   left: 182px;
@@ -186,4 +209,13 @@ textarea {
   font-family: latolight;
   font-size: 21px;
   color: #fff;
+}
+.Слой_30 {
+  background-image: url("Слой 30.png");
+  position: absolute;
+  left: 3px;
+  top: -91px;
+  width: 1914px;
+  height: 1043px;
+  z-index: 217;
 }

@@ -1,0 +1,220 @@
+.description {
+  padding-bottom: 100px;
+}
+.description_top {
+  padding-top: 25px;
+  height: 266px;
+  background: #e7ecea;
+}
+.description_top h2 {
+  font-family: latosemibold;
+  font-size: 42px;
+  color: #6a7b8c;
+  text-align: center;
+}
+.description_top p {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0 50px 0 175px;
+  max-width: 1000px;
+  width: 100%;
+  font-family: latothin;
+  color: #535151;
+}
+.description_top p:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 153px;
+  height: 167px;
+  background: url("/img/description-logo.png") no-repeat;
+}
+.description_top p b {
+  font-family: latobold;
+  color: #fb7070;
+}
+.description .tab_title {
+  margin-top: -62px;
+  height: 62px;
+  font-family: latolight;
+  color: #828282;
+}
+.description .tab_title .description_version {
+  margin-top: 2px;
+  margin-right: 20px;
+  font-size: 41px;
+}
+.description .tab_title__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+  width: 230px;
+  height: 62px;
+  font-size: 25px;
+  font-weight: 600;
+  background: url("/img/description-tab.jpg");
+  background-position: right;
+  cursor: pointer;
+}
+.description .tab_title__item.active {
+  background-position: left;
+}
+.description .tab_content__item {
+  position: relative;
+  padding-top: 42px;
+  border: 1px solid #dadada;
+  border-top: none;
+  border-bottom: none;
+  background: #fff;
+}
+.description .tab_content__item:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 280px;
+  left: -150%;
+  width: 400%;
+  height: 69px;
+  background: url("/img/lines.jpg");
+}
+.description .tab_content .tab_content__title {
+  margin-bottom: 12px;
+  color: #798897;
+  line-height: 29px;
+}
+.description .tab_content .tab_content__title h3 {
+  font-family: latolight;
+  font-size: 25px;
+}
+.description .tab_content .tab_content__title h3 b {
+  color: #fb7070;
+}
+.description .tab_content .tab_content__title div {
+  font-family: latothin;
+  font-size: 16px;
+}
+.video_wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 760px;
+  height: auto;
+}
+.video_wrap .video_tab {
+  display: flex;
+  align-self: flex-end;
+  margin-top: 5px;
+}
+.video_wrap .video_tab a {
+  margin: 0 5px 0 5px;
+  font-family: latothin;
+  font-weight: 600;
+  color: #4d8ecf;
+  text-decoration: underline;
+}
+.video_wrap .video_tab a:hover {
+  text-decoration: none;
+}
+.video_wrap .video_tab a.active {
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+.accordion li:first-child .title {
+  margin-top: 38px;
+}
+.accordion li:last-child .title {
+  border-bottom: 1px solid #dadada;
+}
+.accordion li:last-child .content {
+  border-bottom: 1px solid #dadada;
+}
+.accordion li:nth-child(2) .title:before {
+  background-position: 0 -75px;
+}
+.accordion li:nth-child(3) .title:before {
+  background-position: 0 -148px;
+}
+.accordion li:nth-child(4) .title:before {
+  background-position: 0 -225px;
+}
+.accordion li:nth-child(5) .title:before {
+  background-position: 0 -300px;
+}
+.accordion li:nth-child(6) .title:before {
+  background-position: 0 -373px;
+}
+.accordion li:nth-child(7) .title:before {
+  background-position: 0 -145px;
+}
+.accordion .title {
+  position: relative;
+  padding: 23px 10px 23px 11px;
+  width: 100%;
+  min-height: 75px;
+  border-top: 1px solid #dadada;
+}
+.accordion .title:before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 50px;
+  width: 60px;
+  height: 60px;
+  background: url("/img/description-iconset.jpg") no-repeat;
+}
+.accordion .title.active {
+  border-bottom: 1px solid #dadada;
+}
+.accordion .title.active h3 {
+  font-weight: 600;
+  color: #b95444;
+}
+.accordion .title h3 {
+  display: inline-block;
+  padding-left: 80px;
+  font-family: latoregular;
+  font-weight: 100;
+  font-size: 21px;
+  color: #6a7b8c;
+}
+.accordion .content {
+  position: relative;
+  margin: 0 11px 0 11px;
+  padding: 20px 17px 27px 17px;
+  font-family: latoregular;
+  line-height: 23px;
+  color: #4d4d4d;
+  background: #fbfbfb;
+  border: 1px solid #b6b6b6;
+  border-top: none;
+  border-bottom: none;
+}
+.accordion .content p {
+  margin-bottom: 20px;
+}
+.accordion .content p:last-child {
+  margin-bottom: 0;
+}
+.accordion .content:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -24px;
+  width: 20px;
+  height: 100%;
+  background: #fff;
+}
+.accordion .content:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -24px;
+  width: 20px;
+  height: 100%;
+  background: #fff;
+}
