@@ -17,13 +17,14 @@
                         input(type='name' placeholder='Имя*')
                         input(type='email' placeholder='Email')
                         textarea(placeholder='Ваш вопрос*')
-                    <div class="checkbox checkbox2">
-                        <input type="checkbox" id="checkbox-7" checked/>
-                    <label for="checkbox-7">Получить ответ по <b>email</b></label>
-                    </div>
-                    <div class="checkbox checkbox2">
-                        <input type="checkbox" id="checkbox-8"/>
-                        <label for="checkbox-8">Получить ответ по <b>телефону</b></label>
-                    </div>
-                    input(type='tel' placeholder='Телефон*')
+                    .get_response
+                        <div class="checkbox checkbox2">
+                            <input type="radio" id="checkbox-7" data-response='email' name='response' checked/>
+                            <label for="checkbox-7">Получить ответ по <b>email</b></label>
+                        </div>
+                        <div class="checkbox checkbox2">
+                            <input type="radio" id="checkbox-8" data-response='phone'  name='response'/>
+                            <label for="checkbox-8">Получить ответ по <b>телефону</b></label>
+                        </div>
+                    input(id='response_phone' type='tel' placeholder='Телефон*')
                     button(class='btn3' type='button') Задать вопрос

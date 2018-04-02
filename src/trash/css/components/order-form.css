@@ -1,5 +1,6 @@
 .orderForm_title {
   font-size: 29px;
+  font-weight: 600;
   color: #798897;
 }
 .orderForm .container {
@@ -10,7 +11,7 @@
   padding: 25px 42px 20px 42px;
   width: 360px;
   border: 1px solid #91bcc9;
-  background: #fff;
+  background: #f8fffe;
 }
 .orderForm form:before {
   content: '';
@@ -62,4 +63,18 @@
 }
 .orderForm_right span {
   color: #f96160;
+}
+@media (max-width: 900px) {
+  .orderForm {
+    padding-bottom: 80px;
+  }
+  .orderForm .container.flex_row__center {
+    flex-direction: column;
+  }
+  .orderForm .container.flex_row__center form {
+    margin: 80px 0 80px 0;
+  }
+  .orderForm .container.flex_row__center .orderForm_right {
+    margin-left: 0;
+  }
 }

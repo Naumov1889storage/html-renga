@@ -1,7 +1,7 @@
 @import "common"
 
 .footer {
-	background: url(/img/footer.jpg) -280px 9px repeat-x
+	position: relative
 	.container {
 		position: relative
 		height: 100px
@@ -32,14 +32,60 @@
 		font-size: 21px
 		color: #ffffff
 	}
+	.footer_bg {
+		position: relative
+		&:before {
+			content: ''
+			position: absolute
+			z-index: -1
+			right: -1375px
+			bottom: -100px
+			width: 400%
+			height: 92px
+			background: url(/img/footer.jpg) repeat-x
+			background-position-x: right
+			-webkit-background-size: 2000px
+			background-size: 2900px
+		}
+	}
 }
 
-.Слой_30 {
-	background-image: url("Слой 30.png");
-	position: absolute;
-	left: 3px;
-	top: -91px;
-	width: 1914px;
-	height: 1043px;
-	z-index: 217;
+
+@media (max-width: 880px) {
+    .footer {
+	    .container {
+		    &:before {
+			    right: 0
+		    }
+		    &:after {
+			    display: none
+		    }
+	    }
+		.flex_row__between {
+			left: 20px
+		}
+		.footer_bg {
+			&:before {
+				right: -40px
+				height: 50px
+				background-image: none
+				background: #6a7b8c
+			}
+		}
+    }
+}
+
+@media (max-width: 430px) {
+	.footer {
+		.container {
+			&:before {
+				bottom: 92px
+			}
+		}
+		.footer_bg {
+			&:before {
+				height: 75px
+			}
+		}
+	}
 }

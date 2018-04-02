@@ -1,6 +1,6 @@
 .download {
   padding-top: 105px;
-  height: 416px;
+  min-height: 416px;
   background: url("/img/download.jpg") center no-repeat;
 }
 .download h2 {
@@ -58,4 +58,19 @@
 .download_remark {
   font-family: latolight;
   color: #798897;
+}
+@media (max-width: 400px) {
+  .download {
+    padding-bottom: 50px;
+    background-size: 700%;
+  }
+  .download .btn-wrap {
+    flex-direction: column;
+    margin-bottom: 40px;
+    height: 75px;
+    width: 100%;
+  }
+  .download .btn-wrap span {
+    margin: 12px 0 12px 0;
+  }
 }

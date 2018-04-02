@@ -11,7 +11,8 @@
     <div class="header">
       <video class="header_video vsc-initialized" src="video/header-video.mp4" autoplay="" loop=""></video>
       <div class="container">
-        <div class="header_top flex_row__between">
+        <div class="header_top flex_row__between"><button class="burger"><i></i></button>
+          <div class="transpBox overlay"></div>
           <ul class="header_top__menu transpBox flex_row__between">
             <li><a href="">Акции</a></li>
             <li><a href="">Контакты</a></li>
@@ -329,15 +330,17 @@
                 <input type="name" placeholder="Имя*">
                 <input type="email" placeholder="Email">
                 <textarea placeholder="Ваш вопрос*"></textarea>
-              </div><div class="checkbox checkbox2">
-<input type="checkbox" id="checkbox-7" checked/>
+              </div>
+              <div class="get_response"><div class="checkbox checkbox2">
+<input type="radio" id="checkbox-7" data-response='email' name='response' checked/>
 <label for="checkbox-7">Получить ответ по <b>email</b></label>
 </div>
 <div class="checkbox checkbox2">
-<input type="checkbox" id="checkbox-8"/>
+<input type="radio" id="checkbox-8" data-response='phone'  name='response'/>
 <label for="checkbox-8">Получить ответ по <b>телефону</b></label>
 </div>
-              <input type="tel" placeholder="Телефон*">
+              </div>
+              <input id="response_phone" type="tel" placeholder="Телефон*">
               <button class="btn3" type="button">Задать вопрос</button>
             </form>
           </div>
@@ -347,6 +350,7 @@
     <div class="footer">
       <div class="container">
         <div class="flex_row__between"><b>+ 7 (812) 740-76-48 | <span> info@pronanocad.ru</span></b></div>
+        <div class="footer_bg"></div>
       </div>
     </div>
     <script src="js/jquery-3.2.1.min.js"></script>

@@ -1,6 +1,7 @@
 .orderForm {
 	&_title {
 		font-size: 29px
+		font-weight: 600
 		color: #798897
 	}
 	.container {
@@ -11,7 +12,7 @@
 		padding: 25px 42px 20px 42px
 		width: 360px
 		border: 1px solid #91bcc9
-		background: #ffffff
+		background: #f8fffe
 		&:before {
 			content: ''
 			position: absolute
@@ -63,6 +64,21 @@
 		}
 		span {
 			color: #f96160
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.orderForm {
+		padding-bottom: 80px
+		.container.flex_row__center {
+			flex-direction: column
+			form {
+				margin: 80px 0 80px 0
+			}
+			.orderForm_right {
+				margin-left: 0
+			}
 		}
 	}
 }
