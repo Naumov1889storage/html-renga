@@ -249,7 +249,7 @@ textarea {
 .header,
 .header_video {
   min-width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   overflow: hidden;
 }
 .header_video {
@@ -436,13 +436,5 @@ textarea {
   }
   .header ul.header_middle__menu li {
     padding: 0;
-  }
-}
-@media (max-width: 390px) {
-  .header .header_top__call {
-    right: -20px;
-  }
-  .header .header_top__call .call-tel {
-    font-size: 24px;
   }
 }

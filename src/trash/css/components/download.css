@@ -62,7 +62,7 @@
 @media (max-width: 400px) {
   .download {
     padding-bottom: 50px;
-    background-size: 700%;
+    background-size: cover;
   }
   .download .btn-wrap {
     flex-direction: column;
