@@ -53,4 +53,6 @@ $(function() {
 
 	accordion();
 
+	tab();
+
 });
