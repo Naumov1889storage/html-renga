@@ -1,0 +1,141 @@
+.newHeader {
+	background: #6b7b8a
+	color: #ffffff
+	&__wrap {
+		min-height: 57px
+	}
+	a {
+		text-decoration: none
+		color: #ffffff
+		&:visited {
+			color: #ffffff
+		}
+	}
+	&__logo {
+		position: relative
+		padding-left: 54px
+		font-family: latoblack
+		font-size: 20px
+		img {
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+			width: 43px
+			height: 47px
+		}
+	}
+
+	&__nav {
+		display: flex
+		font-family: latoregular
+		font-size: 17px
+	}
+
+	&__tel {
+		font-family: latoblack
+		font-size: 20px
+	}
+	&__tel__btn {
+		display: none
+		text-align: center
+		color: #ffffff !important
+	}
+}
+
+.newHeader .burger{
+	display: none
+	top: 15px
+	left: 15px
+}
+
+
+.crumbs {
+	font-family: latoregular
+	font-size: 17px
+	a {
+		color: #6b7b8a
+		&:visited {
+			color: darken(#6b7b8a, 30%)
+		}
+	}
+	&__current {
+		text-decoration: none
+		pointer-events: none
+		cursor: default
+	}
+}
+
+.crumbs__wrap {
+	margin-top: 6px
+}
+
+.orderCallBtn {
+	font-family: latoregular
+	font-size: 17px
+	color: #6b7b8a
+	text-decoration: underline
+	cursor: pointer
+	&:hover {
+		text-decoration: none
+	}
+}
+
+
+@media (max-width: 800px) {
+	.newHeader .burger{
+		display: block
+	}
+	.newHeader {
+		&__logo {
+			margin-left: 50px
+		}
+		&__nav {
+			position: absolute
+			z-index: 30
+			left: -300px
+			top: 100px
+			display: flex
+			flex-direction: column
+			background: #6a7b8c
+			transition: .3s
+			&.active {
+				left: 0
+			}
+			li {
+				&:first-child {
+					padding-top: 10px
+				}
+				&:last-child {
+					padding-bottom: 10px
+				}
+				a {
+					display: block
+					padding: 5px 20px 5px 20px
+				}
+				span {
+					display: none
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 470px) {
+	.newHeader {
+		&__wrap {
+			padding: 20px 0 10px 0
+			flex-direction: column
+		}
+		&__logo {
+			margin: 0 0 20px 0
+		}
+
+		&__tel__btn {
+			display: block !important
+		}
+	}
+	.orderCallBtn {
+		display: none
+	}
+}

@@ -1,0 +1,124 @@
+.newHeader {
+  background: #6b7b8a;
+  color: #fff;
+}
+.newHeader__wrap {
+  min-height: 57px;
+}
+.newHeader a {
+  text-decoration: none;
+  color: #fff;
+}
+.newHeader a:visited {
+  color: #fff;
+}
+.newHeader__logo {
+  position: relative;
+  padding-left: 54px;
+  font-family: latoblack;
+  font-size: 20px;
+}
+.newHeader__logo img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 43px;
+  height: 47px;
+}
+.newHeader__nav {
+  display: flex;
+  font-family: latoregular;
+  font-size: 17px;
+}
+.newHeader__tel {
+  font-family: latoblack;
+  font-size: 20px;
+}
+.newHeader__tel__btn {
+  display: none;
+  text-align: center;
+  color: #fff !important;
+}
+.newHeader .burger {
+  display: none;
+  top: 15px;
+  left: 15px;
+}
+.crumbs {
+  font-family: latoregular;
+  font-size: 17px;
+}
+.crumbs a {
+  color: #6b7b8a;
+}
+.crumbs a:visited {
+  color: #4b5661;
+}
+.crumbs__current {
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+}
+.crumbs__wrap {
+  margin-top: 6px;
+}
+.orderCallBtn {
+  font-family: latoregular;
+  font-size: 17px;
+  color: #6b7b8a;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.orderCallBtn:hover {
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .newHeader .burger {
+    display: block;
+  }
+  .newHeader__logo {
+    margin-left: 50px;
+  }
+  .newHeader__nav {
+    position: absolute;
+    z-index: 30;
+    left: -300px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    background: #6a7b8c;
+    transition: 0.3s;
+  }
+  .newHeader__nav.active {
+    left: 0;
+  }
+  .newHeader__nav li:first-child {
+    padding-top: 10px;
+  }
+  .newHeader__nav li:last-child {
+    padding-bottom: 10px;
+  }
+  .newHeader__nav li a {
+    display: block;
+    padding: 5px 20px 5px 20px;
+  }
+  .newHeader__nav li span {
+    display: none;
+  }
+}
+@media (max-width: 470px) {
+  .newHeader__wrap {
+    padding: 20px 0 10px 0;
+    flex-direction: column;
+  }
+  .newHeader__logo {
+    margin: 0 0 20px 0;
+  }
+  .newHeader__tel__btn {
+    display: block !important;
+  }
+  .orderCallBtn {
+    display: none;
+  }
+}

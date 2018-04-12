@@ -1,0 +1,34 @@
+doctype html
+html(lang="ru-Ru")
+    head
+        meta(charset = 'utf-8')
+        meta(name='viewport', content="initial-scale=1.0, width=device-width")
+        title Renga
+        link(rel='stylesheet', href='css/concat-css-libs.min.css')
+        link(rel='stylesheet', href='css/concat-css.min.css')
+    body
+        .newHeader
+            .container
+                <button class="burger"><i></i></button>
+                .transpBox.overlay
+                .newHeader__wrap.flex_row__between.align_center
+                    a(class='newHeader__logo' href='') RENGA-BIM
+                        img(src='img/footer-logo.png')
+                    ul.newHeader__nav
+                        <li> <a href=''>Renga Arhitecer</a> <span> | </span><a href=''>Renga Structure</a> <span> | </span><a href=''>Контакты</a>
+                    .newHeader__tel__wrap
+                        .newHeader__tel + 7 (812) 740-76-48
+                        .newHeader__tel__btn.orderCallBtn заказать звонок
+
+
+        .crumbs__wrap
+            .container.flex_row__between
+                .crumbs
+                    <a href=''>Главная</a> <span> - </span> <a class='crumbs__current' href=''>renga arhiteche</a>
+
+                .orderCallBtn заказать звонок
+
+
+        script(src='js/jquery-3.2.1.min.js')
+        script(src='js/concat-js-libs.min.js')
+        script(src='js/common.min.js')

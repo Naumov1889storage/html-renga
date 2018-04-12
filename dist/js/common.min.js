@@ -48,7 +48,7 @@ $(function() {
 	});
 
 	$('.burger, .overlay').click(function() {
-		$('.burger, .header_top__menu, .overlay').toggleClass('active');
+		$('.burger, .header_top__menu, .newHeader__nav, .overlay').toggleClass('active');
 	});
 
 	accordion();
